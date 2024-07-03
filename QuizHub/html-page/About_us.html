@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>QuizHub::About me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/About_us.css">
+    <link rel="stylesheet" href="../Header/css/headerstyl.css">
+    <link rel="stylesheet" href="../css/home_footer_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Courgette|Lobster&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-auth.js"></script>
+</head>
+
+<body>
+ 
+    <div class="test">
+        <div class="header-area-style ">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark bg-transparent ">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo/1.png" style=" width: 190px;" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                    <ul class="navbar-nav" style="margin-right: 200px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item " style="min-width: 96.016px;">
+                            <a class="nav-link" href="Contact_us.html">Contact-Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" style="min-width: 83.750px;" href="About_us.html">About-Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav" id="nav-noUser" style="float: left; margin-left: 0px;">
+                        <li>
+                            <a class="boxed_btn_orange nav-item" href="REGISTER.html">
+                                <span>Register</span>
+                            </a>
+                        </li>
+                        <li style="min-width: 116.458px;">
+                            <a class="boxed_btn_orange nav-item" href="login_form.html">
+                                <span>Log-in</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav" id="nav-avatar" style="float: left; display: none;">
+                        <li id="info-bar">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" style=" border-radius: 30px; border: 0; background-color: transparent;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-user" style="font-size: 25px;"></i>
+                                    <label id="profile-name-avatar" style="margin-left: 7px; font-size: 17px; text-transform: none; color: white;"></label>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="profile.html">Profile</a>
+                                    <a class="dropdown-item" onclick="logOut();">Log Out</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="top_title text-center">
+             <h1>"None of us is as smart as all of us." <span style="font-size: 20px;">--Ken Blanchard</span></h1>
+         </div>
+        <div class="marg row">
+
+            <img class="col-md-4 col-sm-6" src="../img/logo/4.png">
+
+            <p class="paragraph col-md-7 col-sm-6">
+                <strong style="color: orange;">QuizHub</strong>.<br>
+                The easiest way to generate online quizzes, QuizHub, was created by a second-year computer science student passionate about web development. This web application simplifies the process for instructors to create quizzes and for students to participate and view their grades effortlessly. And you dont need to worry about a fee because it's completely
+                 <strong style="font-family: 'Courier New', Courier, monospace; color: orange;">FREE</strong>.
+                <br> Only you need to do is to register in the site , and start creating quiz if you registered as an
+                instructor , or start participating in quiz if you registered as a Student ,you Can only enroll into quiz 
+                using Access Code From your instructor,
+                
+                <br>
+                
+
+            </p>
+
+        </div>
+
+
+
+        <h3 class="Meet_title text-center"><br>Meet the<strong style="color: orange;">QuizHub</strong>Developer</h3>
+        <div class="marg">
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="box">
+                        <img src="QuizHub\img\about_us\linkedin dp.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Anoushka Koul</h3>
+                            <span class="post">Creator</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+        
+                <div class="col-md-1 col-sm-6"></div>
+
+              
+
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        
+
+        <div class="mt-5 pt-5 pb-5 footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-xs-12 about-company">
+                        <h2 class="orange-text">Quizzer</h2>
+                        <p class="pr-5 text-white-50"> web Application that help Instructors to generate their custom
+                            Quiz <br>
+                            <span class="orange-text">QuizHub</span> is created<span style="color: red; font-size: 20px;">♥</span>
+                            by a student as a part of Web-Development
+                            assessment
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-xs-12 links">
+                        <h4 class="mt-lg-0 mt-sm-3 orange-text">Quick Links</h4>
+                        <ul class="m-0 p-0">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="Contact_us.html">Contact me</a></li>
+                            <li><a href="About_us.html">About me</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-xs-12 location">
+                        <h4 class="mt-lg-0 mt-sm-4 orange-text">Location</h4>
+                        <p><i class="fa fa-map-marker  mr-3"></i> Gujarat,India </p>
+                        <p><i class="fa fa-envelope-o mr-3 "></i>anoushkakoul5@gmail.com@gmail.com</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    
+<script src="../js/user.js"></script>
+  
+    <script src="../js/watson.js"></script>
+
+</body>
+
+</html>
